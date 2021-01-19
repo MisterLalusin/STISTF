@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ef0261ef"
+    tools:context="com.example.lab1pc19.sti_stf.Register">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="763dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/_btnreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/txtcpass"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/drawbutton"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/Register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Register" />
+
+        <EditText
+            android:id="@+id/txtfname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtlname"
+            android:layout_marginTop="283dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtfname"
+            android:layout_alignStart="@+id/txtunameem"
+            android:layout_marginBottom="43dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtmname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtlname"
+            android:layout_below="@+id/txtlname"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Middle Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtStudentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtlname"
+            android:layout_alignStart="@+id/txtlname"
+            android:ems="10"
+            android:hint="Student Id"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtmname"
+            android:layout_below="@+id/txtmname"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Contact Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtunameem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtcontact"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtupass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtunameem"
+            android:layout_below="@+id/txtunameem"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtcpass"
+            android:layout_marginBottom="94dp"
+            android:text="Already have an account? Click " />
+
+        <EditText
+            android:id="@+id/txtcpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtupass"
+            android:layout_below="@+id/txtupass"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txtSTI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="STI-STF"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:fontFamily="monospace"
+            android:text="Student Tutor Finder" />
+
+        <Button
+            android:id="@+id/btnlinklogin"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:background="#00000000"
+            android:text="Here"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            tools:layout_editor_absoluteX="330dp"
+            tools:layout_editor_absoluteY="704dp" />
+
+        <QuickContactBadge
+            android:id="@+id/quickContactBadge3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/txtStudentId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            app:srcCompat="@mipmap/ic_red" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

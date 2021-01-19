@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ef0261ef"
+    tools:context="com.example.lab1pc19.sti_stf.Login"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:layout_width="464dp"
+        android:layout_height="759dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtSTI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="139dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="STI-STF"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView3"
+            android:fontFamily="monospace"
+            android:text="Student Tutor Finder" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/txtSTI"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/ic_stistf"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="108dp" />
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Email/Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtemail"
+            android:layout_below="@+id/txtemail"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtCpass"
+            android:layout_below="@+id/btnlog"
+            android:text="Already have an account? Click " />
+
+        <Button
+            android:id="@+id/btnlinkreg"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:background="#00000000"
+            android:text="Here"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="13sp"
+            tools:layout_editor_absoluteX="330dp"
+            tools:layout_editor_absoluteY="704dp" />
+
+        <Button
+            android:id="@+id/btnlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/txtpass"
+            android:layout_marginTop="62dp"
+            android:background="@drawable/drawbutton"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Login" />
+
+        <EditText
+            android:id="@+id/txtCpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtpass"
+            android:layout_below="@+id/txtpass"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

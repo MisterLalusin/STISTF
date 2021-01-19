@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lab1pc19.sti_stf.Red">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <RelativeLayout
+        android:layout_width="464dp"
+        android:layout_height="759dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/btnsched"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="289dp"
+            android:onClick="sched"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/drawbutton"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Schedule a Session"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnsched"
+            android:layout_alignStart="@+id/btnsched"
+            android:layout_alignTop="@+id/btnsched"
+            android:layout_marginTop="64dp"
+            android:onClick="view"
+            android:background="@drawable/drawbutton"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="View Appointment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/imageView5"
+            android:layout_alignTop="@+id/btnsched"
+            android:layout_marginTop="41dp"
+            app:srcCompat="@mipmap/ic_red" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/btnview"
+            android:layout_marginBottom="40dp"
+            android:layout_toStartOf="@+id/btnsched"
+            app:srcCompat="@mipmap/ic_red" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            app:srcCompat="@mipmap/ic_stistf" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Student Tutor Finder"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:text="STI-STF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

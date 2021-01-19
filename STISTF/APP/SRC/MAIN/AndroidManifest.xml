@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lab1pc19.sti_stf">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_stistf"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_stistf"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".ViewAppointment" />
+        <activity android:name=".Red" />
+        <activity android:name=".accountingskedActivity" />
+        <activity android:name=".accountingtutorsActivity"></activity>
+    </application>
+
+</manifest>
